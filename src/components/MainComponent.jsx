@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import SingleDay from "./SingleDay";
-
-// const url =
-//   "https://api.openweathermap.org/data/2.5/weather?q=London&appid=4c9e1cc96f0601510d0a6ce9db5d0706";
-
-// const url =
-//   "https://pro.openweathermap.org/data/2.5/forecast/daily?q=London&appid=4c9e1cc96f0601510d0a6ce9db5d0706";
 
 const MainComponent = () => {
   const params = useParams();
@@ -54,6 +48,15 @@ const MainComponent = () => {
             <Col sm={12}>
               <h1 className="mb-4">{cityName}:</h1>
             </Col>
+            {/* <Button
+                color="info"
+                onClick={() => {
+                  dispatch({
+                    type: 'ADD_TO_CART',
+                    payload: bookSelected,
+                  })
+                }}
+              > */}
           </Row>
           <Row sm={5}>
             {city.map((day, i) => {
@@ -62,7 +65,7 @@ const MainComponent = () => {
           </Row>
         </>
       ) : (
-        <h2>Start by searching for a city</h2>
+        <h2>Start by searching for a city...</h2>
       )}
     </Container>
   );

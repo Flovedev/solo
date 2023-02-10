@@ -14,13 +14,13 @@ const SingleDay = ({ data, i }) => {
       </div>
       <div className="bg-white p-3">
         <div>
-          Temperature: {Math.round((data.temp.day - 273.15) * 10) / 10} .C
+          Temperature: {Math.round((data.temp.day - 273.15) * 10) / 10} °C
         </div>
         <div>Humidity: {data.humidity}</div>
         <div>Wind speed: {data.speed}</div>
         <div>Pressure: {data.pressure}</div>
         <div>
-          Feels like: {Math.round((data.feels_like.day - 273.15) * 10) / 10} .C
+          Feels like: {Math.round((data.feels_like.day - 273.15) * 10) / 10} °C
         </div>
       </div>
     </div>
