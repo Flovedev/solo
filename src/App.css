@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.days-container {
+  background-color: rgb(139, 228, 210);
+  /* width: 180px; */
+}
+body {
+  /* min-height: 80vh; */
+  height: 100vh;
+  background-color: #afeafb !important;
+  background-image: url("./assets/wheater.png");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: -2%;
+}
+
+.error-container {
+  background-color: rgb(250, 225, 215);
+  border-radius: 20px;
+}
+
+.footer-container div {
+  background-color: rgb(255, 245, 209);
+}
